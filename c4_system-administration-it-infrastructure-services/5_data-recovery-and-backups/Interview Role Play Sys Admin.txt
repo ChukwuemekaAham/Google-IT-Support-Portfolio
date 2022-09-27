@@ -1,0 +1,42 @@
+Hi,I'm Rob.
+>> And I'm Candice. >> Congrats on making it through this course. Now that you've made it this far,
+we're here to give you a sneak peek into what an interview on the technical
+subjects covered by this course might look like.
+>> We hope this will help you have a better idea what to expect
+in your next interview. Just remember to keep learning and keep practicing.
+>> So in this scenario, let's say I come to you and ask you to help me deploy
+some applications to my Windows users. In total, we have about 100 machines
+that we want to install to. Half are going to get one application, and
+the other half's going to get another. What are some ways that
+we can accomplish this? >> First, I would like to know if these machines are managed by Active Directory.
+>> Yeah, let's say that we have one
+Active Directory domain. And before we go into deploying the
+software, tell me a little bit about what Active Directory is and why it's
+helpful in this kind of environment. >> Active Directory organizes users, groups and computer permissions to restrict certain
+resources in the enterprise environment. It's also used to deploy software, and
+it's also used to control the environment. >> Okay, so we already have Active Directory set up. How can we utilize it
+to deploy our software? >> Since we're deploying this file to a lot of users,
+we want to test it out first, so I want to know if this is an MSI file.
+>> Yeah, it is an MSI file, and yes I agree we should test it out. So talk to me about how
+you do your testing. >> Okay, so you want to replicate the application for both sets of users. Do you know if these users are in different OUs?
+>> Yeah, let's say that we have a sales and engineering OU, and we want to
+target each with their own application. >> So we want to create test accounts and then add those test accounts to those
+specific OUs or we can have pilot users. Another way to fully test this process is
+by creating a group for the pilot users. And then we can create a new group policy
+that will allow the application to be installed once the computer boots up.
+>> Okay, and where would we store the MSI file?
+>> We could store the file on a shared network drive, if we have one. If we don't, we can always create one.
+>> Okay, great, so, let's say that we do all of this and
+now our packages have both been tested. We know they're working well. Now what?
+>> So you want to send out communications
+to the target users and then we also want to do is during off
+hours so it would not be disruptive. And then we also want to give the users
+our support contact just so if something does arise, they'll be able to contact
+someone and get help immediately. Okay, great, yeah,
+I think that's a pretty good plan. In this scenario, we saw some of
+the interviewing skills that we called out before, like asking follow-up questions
+and defining terms when you mention them. We also saw how answering technical
+questions is not always about technical issues. We also need to take into
+account the human component, like putting a communications
+plan in place. That's it for now. See you again at the end
+of the next course.
