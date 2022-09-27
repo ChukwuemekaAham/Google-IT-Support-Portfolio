@@ -46,8 +46,7 @@ The company generates a lot of revenue and is rapidly growing. They’re expecti
 
 **My Review**:
 
->
-Since the company generates a lot of revenue and is rapidly growing; expecting to hire hundreds of new employees in the next year or so, it has become very important to set up  and blend a centralized management system with the existing directory service, which can be used to configure servers and manage users and computers. Configuration management tools like puppet, chef and ansible can be very helpful. 
+> Since the company generates a lot of revenue and is rapidly growing; expecting to hire hundreds of new employees in the next year or so, it has become very important to set up  and blend a centralized management system with the existing directory service, which can be used to configure servers and manage users and computers. Configuration management tools like puppet, chef and ansible can be very helpful. 
 Replication of data on and off the cloud should be adopted and a well documented disaster recovery plan should be drafted, with simulated tests carried out for several cases.
 
 
