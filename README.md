@@ -17,7 +17,7 @@ This 5-course certificate, developed by Google, includes innovative curriculum d
 
 Upon completion, you can directly apply for jobs with Google and over 150 U.S. employers, including Walmart, Best Buy, and Astreya. You can also earn a CompTIA and Google [dual credential](https://www.blog.google/outreach-initiatives/grow-with-google/-it-support-comptia/) when you complete the Google certificate and pass the CompTIA A+ certification exams.
 
-Through a mix of video lectures, quizzes, and hands-on labs and widgets, the program will introduce you to troubleshooting, customer service, networking, operating systems, system administration and security. You’ll hear from Googlers with unique backgrounds whose own foundation in IT support served as a jumping off point for their careers. By dedicating ~5 t 10 hours a week, you can complete in under six months.
+Through a mix of video lectures, quizzes, and hands-on labs and widgets, the program will introduce you to troubleshooting, customer service, networking, operating systems, system administration and security. You’ll hear from Googlers with unique backgrounds whose own foundation in IT support served as a jumping off point for their careers. By dedicating 5 t0 10 hours a week, it can be completed in under six months.
 
 ### Applied Learning Project
 
