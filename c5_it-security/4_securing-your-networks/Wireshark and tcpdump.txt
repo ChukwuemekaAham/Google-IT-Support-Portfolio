@@ -1,0 +1,80 @@
+Tcpdump is a super popular,
+lightweight command-line based utility that you can use to capture and
+analyze packets. Tcpdump uses the open
+source libpcap library. That's a very popular packet capture
+library that's used in a lot of packet capture and analysis tools. Tcpdump also supports writing
+packet captures to a file for later analysis, sharing,
+or replaying traffic. It also supports reading packet
+captures back from a file. Tcpdump's default operating mode is
+to provide a brief packet analysis. It converts key information from layers
+three and up into human readable formats. Then it prints information about
+each packet to standard out, or directly into your terminal. It does things like
+converting the source and destination IP addresses into the dotted
+quad format we're most used to. And it shows the port numbers
+being used by the communications. Let's quickly walk through
+the output of a sample tcpdump. The first bit of information
+is fairly straightforward. It's a timestamp that represents when
+the packet on this line was processed by the kernel, in local time. Next the layer three protocol is
+identified, in this case, it's IPv4. After this, the connection quad is shown. This is the source address, source port,
+destination address, and destination port. Next, the TCP flags and the TCP sequence number are set
+on the packet, if there are any. This is followed by the ack number,
+TCP window size, then TCP options, if there are any set. Finally we have payload size in bytes. Remember these from a few lessons ago,
+when we covered networking? Tcpdump allows us to actually inspect
+these values from packets directly. I want to call out that tcpdump, by default, will attempt to resolve
+host addresses to hostnames. It'll also replace port numbers with
+commonly associated services that use these ports. You could override this
+behavior with a -n flag. It's also possible to view the actual
+raw data that makes up the packet. This is represented as hexadecimal digits,
+by using the -x flag, or capital X if you want the hex in
+ASCII interpretation of the data. Remember that packets are just collections
+of data, or groupings of ones and zeros. They represent information depending
+on the values of this data, and where they appear in the data stream. Think back to packet headers, and
+how those are structured and formatted. The view tcpdump gives us lets us see
+the data that fits into the various fields that make up the headers for
+layers in a packet. Wireshark is another packet capture and
+analysis tool that you can use, but it's way more powerful when
+it comes to application and packet analysis, compared to tcpdump. It's a graphical utility that also uses
+the libpcap library for capture and interpretation of packets. But it's way more extensible when it comes
+to protocol and application analysis. While tcpdump can do basic
+analysis of some types of traffic, like DNS queries and answers,
+Wireshark can do way more. Wireshark can decode encrypted payloads
+if the encryption key is known. It can identify and extract data payloads from file transfers
+through protocols like SMB or HTTP. Wireshark's understanding of application
+level protocols even extends to its filter strings. This allows filter rules like finding HTTP
+requests with specific strings in the URL, which would look like,
+http.request.uri matches "q=wireshark". That filter string would locate packets
+in our capture that contain a URL request that has the specified string within it. In this case it would match a query
+parameter from a URL searching for Wireshark. While this could be done using tcpdump,
+it's much easier using Wireshark. Let's take a quick look at the Wireshark
+interface, which is divided into thirds. The list of packets are up top, followed by the layered representation
+of a selected packet from the list. Lastly the Hex and ASCII representation
+of the selected packet are at the bottom. The packet list view is
+color coded to distinguish between different types of
+traffic in the capture. The color coded is user configurable,
+the defaults are green for TCP packets, light blue for UDP traffic,
+and dark blue for DNS traffic. Black also highlights problematic
+TCP packets, like out of order, or repeated packets. Above the packet list pane,
+is a display filter box, which allows complex filtration
+of packets to be shown. This is different from capture filters, which follows the libpcap standard,
+along with tcpdump. Wireshark's deep understanding of
+protocols allows filtering by protocols, along with their specific fields. Since there are over 2,000
+protocols supported by Wireshark, we won't cover them in detail. You may want to take a look at
+the supplementary readings, which shows a broad range of
+protocols understood by Wireshark. Not only does Wireshark have very
+handy protocol handling infiltration, it also understands and
+can follow tcp streams or sessions. This lets you quickly reassemble and
+view both sides of a tcp session, so you can easily view the full two-way
+exchange of information between parties. Some other neat features of Wireshark
+is its ability to decode WPA and WEP encrypted wireless packets,
+if the passphrase is known. It's also able to view Bluetooth
+traffic with the right hardware, along with USB traffic, and
+other protocols like Zigbee. It also supports file carving, or
+extracting data payloads from files transferred over unencrypted protocols,
+like HTTP file transfers or FTP. And it's able to extract audio streams
+from unencrypted VOIP traffic, so basically [LAUGH] Wireshark is awesome. You might be wondering how packet
+capturing analysis fits into security at this point. Like logs analysis, traffic analysis is also an important
+part of network security. Traffic analysis is done using
+packet captures and packet analysis. Traffic on a network is
+basically a flow of packets. Now being able to capture and inspect those packets is
+important to understanding what type of traffic is flowing on our
+networks that we'd like to protect.
