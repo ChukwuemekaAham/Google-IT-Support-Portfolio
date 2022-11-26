@@ -2,12 +2,7 @@
 
 <br>
 
-## ![cert](in view) 
-
-
-* This repository written for reference and self-documentation purpose
-* Feel free to contribute!
-
+![img](google-it-support.png)
 
 <br>
 

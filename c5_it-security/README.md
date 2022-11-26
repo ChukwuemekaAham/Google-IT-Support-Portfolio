@@ -13,7 +13,9 @@ At the end of this course, you’ll understand:
 
 ### Skills you will gain
 
+* Cryptography
 * Cybersecurity
 * Wireless Security
-* Cryptography
 * Network Security
+* System/Application Hardening
+* Consultation and Process Improvement
